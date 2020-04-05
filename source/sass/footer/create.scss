@@ -1,0 +1,21 @@
+.page-footer__create {
+  margin: 34px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+    & svg {
+      fill: $pink;
+      margin-left: 15px;
+    }
+}
+
+.page-footer__create a{
+  color: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

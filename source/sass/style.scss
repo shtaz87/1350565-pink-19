@@ -1,1 +1,16 @@
-body { background: none; }
+@import "normalize.scss";
+@import "global.scss";
+@import "header/header.scss";
+@import "header/nav.scss";
+@import "main/application.scss";
+@import "main/advantages.scss";
+@import "main/reviews.scss";
+@import "main/price.scss";
+@import "main/user-photo.scss";
+@import "main/upload.scss";
+@import "main/form.scss";
+@import "footer/footer.scss";
+@import "footer/contacts.scss";
+@import "footer/map.scss";
+@import "footer/social.scss";
+@import "footer/create.scss";

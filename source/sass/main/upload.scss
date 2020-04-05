@@ -1,0 +1,52 @@
+.upload {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.upload__text {
+  margin: 0 48px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark;
+}
+
+.upload__treatment {
+  margin: 48px 0 0 0;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+}
+
+.upload_img {
+  margin: 20px 0 0 0;
+}
+
+.upload__treatment-list {
+  margin: 42px 0 72px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.upload__button {
+  margin: 0 0 12px 0;
+  padding: 13px 0;
+  width: 100%;
+  color: $pink;
+  border: 3px solid $pink;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button-cancel {
+  opacity: 0.1;
+  color: $dark;
+  border: 3px solid $dark;
+}
