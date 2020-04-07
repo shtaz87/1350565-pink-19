@@ -1,0 +1,27 @@
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.reviews__item-author {
+  margin: 0 0 30px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-style: 18px;
+  line-height: 30px;
+}
+
+.reviews__item-text {
+  margin: 0;
+  padding: 0;
+  color: $dark;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews__item:nth-child(2),
+.reviews__item:nth-child(3){
+  display: none;
+}

@@ -1,0 +1,71 @@
+.application {
+  background-color: #1d2631;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-img-main {
+  margin: 0;
+  padding: 0;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
+  height: 462px;
+}
+
+.intro-img__img {
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.application__download {
+  margin: 28px 20px;
+  padding: 17px 0;
+  color:#FFFFFF;
+  border: 3px solid #FFFFFF;
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.application__platforms {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.application__platform-logo {
+  width: 56px;
+  height: 56px;
+}
+
+.application__platform-logo-ios {
+  background: url("../img/logo-apple.svg") no-repeat center top;
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.application__platform-logo-android {
+  background: url("../img/logo-android.svg") no-repeat center top;
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.application__platform-logo-windows {
+  background: url("../img/logo-microsoft.svg") no-repeat center top;
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.application__text {
+  margin: 0 0 35px 0;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
