@@ -12,6 +12,13 @@
     }
 }
 
+@media (min-width:660px) {
+  .page-footer__create {
+    margin: 0;
+  }
+}
+
+
 .page-footer__create a{
   color: $dark;
   display: flex;

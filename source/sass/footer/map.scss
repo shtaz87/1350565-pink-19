@@ -5,3 +5,16 @@
   min-height: 200px;
 }
 
+@media (min-width:660px) {
+  .page-footer__map {
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat center bottom;
+    min-height: 375px;
+  }
+}
+
+@media (min-width:1200px) {
+  .page-footer__map {
+    background: url("../img/bg-map-desktop@1x.jpg") no-repeat center bottom;
+    min-height: 500px;
+  }
+}
