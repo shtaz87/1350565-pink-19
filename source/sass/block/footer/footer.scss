@@ -8,12 +8,13 @@
   display: none;
 }
 
-@media (min-width:660px) {
+@media (min-width: 660px) {
   .page-footer__main {
     display: flex;
     padding: 36px 20px;
     justify-content: space-around;
   }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-around;

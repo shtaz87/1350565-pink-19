@@ -6,23 +6,22 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-    & svg {
-      fill: $pink;
-      margin-left: 15px;
-    }
+
+  & svg {
+    fill: $pink;
+    margin-left: 15px;
+  }
 }
 
-@media (min-width:660px) {
+@media (min-width: 660px) {
   .page-footer__create {
     margin: 0;
   }
 }
 
-
-.page-footer__create a{
+.page-footer__create a {
   color: $dark;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
