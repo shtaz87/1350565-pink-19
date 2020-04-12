@@ -3,3 +3,20 @@
   padding: 20px;
   text-align: center;
 }
+
+.page-footer__main {
+  display: none;
+}
+
+@media (min-width:660px) {
+  .page-footer__main {
+    display: flex;
+    padding: 36px 20px;
+    justify-content: space-around;
+  }
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}

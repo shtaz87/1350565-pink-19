@@ -6,6 +6,24 @@
   flex-wrap: wrap;
 }
 
+@media (min-width:660px) {
+  .upload {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (min-width:660px) {
+  .upload {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 .upload__text {
   margin: 0 48px;
   padding: 0;
@@ -20,6 +38,14 @@
   background-color: #f2f2f2;
 }
 
+@media (min-width:660px) {
+  .upload__treatment {
+    display: flex;
+    width: 100%;
+  }
+
+}
+
 .upload_img {
   margin: 20px 0 0 0;
 }
@@ -32,6 +58,20 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
+}
+
+@media (min-width:660px) {
+  .upload__treatment-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:660px) {
+  .upload__treatment-wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 .upload__button {

@@ -1,15 +1,45 @@
 .application {
-  background-color: #1d2631;
   color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (min-width:660px) {
+  .application__wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (min-width:1200px) {
+  .application__wrapper {
+    margin: 0 0 0 130px;
+  }
 }
 
 .intro-img-main {
   margin: 0;
   padding: 0;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
-  height: 462px;
+  background-color: #1d2631;
+}
+
+@media (min-width:660px) {
+  .intro-img-main {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center top;
+    padding: 0 20px;
+    height: 730px;
+  }
+}
+
+@media (min-width:1200px) {
+  .intro-img-main {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center top;
+    padding: 0 20px;
+    height: 730px;
+  }
 }
 
 .intro-img__img {
@@ -17,22 +47,58 @@
   padding: 0;
 }
 
+@media (min-width:660px) {
+  .intro-img__img {
+    position: absolute;
+    margin: 0 0 0 150px;
+    z-index: 0;
+  }
+}
+
+@media (min-width:1200px) {
+  .intro-img__img {
+    position: absolute;
+    margin: 0 0 0 470px;
+    z-index: 0;
+  }
+}
+
 .application__download {
   margin: 28px 20px;
   padding: 17px 0;
+  display: block;
+  position: relative;
   color:#FFFFFF;
   border: 3px solid #FFFFFF;
-  width: 100%;
   border-radius: 20px;
   text-align: center;
+  z-index: 1;
+}
+
+@media (min-width:660px) {
+  .application__download {
+    max-width: 300px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1200px) {
+  .application__download {
+    max-width: 300px;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 20px 0;
+  }
 }
 
 .application__platforms {
   list-style: none;
   display: flex;
+  position: relative;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .application__platform-logo {
@@ -64,8 +130,10 @@
 .application__text {
   margin: 0 0 35px 0;
   padding: 0 20px;
+  position: relative;
   text-align: center;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+  z-index: 1;
 }

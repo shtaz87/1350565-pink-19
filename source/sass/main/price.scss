@@ -6,7 +6,7 @@
 }
 
 .price__list:nth-child(2),
-.price__list::nth-child(3){
+.price__list:nth-child(3){
     display: none;
   }
 
@@ -26,20 +26,16 @@
   line-height: 30px;
 }
 
-.price__item-table th
-  &:first-child,
-  &:last-child {
+.price__item-table th:first-child,
+.price__item-table th:last-child {
     width: 20px;
 }
 
-.price__item-table th
-  &last-child{
+.price__item-table th:last-child{
    width: 20px;
 }
 
-.price__item-table th
-  &:nth-child(2),
-  &:nth-child(2){
+.price__item-table th:nth-child(2){
     border-left: 2px solid #e5e5e5;
     border-right: 2px solid #e5e5e5;
 }
