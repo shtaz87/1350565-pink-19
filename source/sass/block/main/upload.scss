@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 }
 
-@media (min-width:660px) {
+@media (min-width: 660px) {
   .upload {
     padding: 0;
     margin: 0;
@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width:660px) {
+@media (min-width: 660px) {
   .upload {
     padding: 0;
     margin: 0;
@@ -38,12 +38,11 @@
   background-color: #f2f2f2;
 }
 
-@media (min-width:660px) {
+@media (min-width: 660px) {
   .upload__treatment {
     display: flex;
     width: 100%;
   }
-
 }
 
 .upload_img {
@@ -60,13 +59,13 @@
   justify-content: space-around;
 }
 
-@media (min-width:660px) {
+@media (min-width: 660px) {
   .upload__treatment-list {
     flex-wrap: wrap;
   }
 }
 
-@media (min-width:660px) {
+@media (min-width: 660px) {
   .upload__treatment-wrapper {
     flex-wrap: wrap;
     width: 100%;
