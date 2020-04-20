@@ -1,7 +1,7 @@
 .page-footer {
+  text-align: center;
   margin: 0;
   padding: 20px;
-  text-align: center;
 }
 
 .page-footer__main {
@@ -11,8 +11,8 @@
 @media (min-width: 660px) {
   .page-footer__main {
     display: flex;
-    padding: 36px 20px;
     justify-content: space-around;
+    padding: 36px 20px;
   }
 
   .page-footer__wrapper {

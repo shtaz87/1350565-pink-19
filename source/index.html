@@ -8,7 +8,11 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo logo">
-        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -33,19 +37,29 @@
     <main>
       <section class="application intro-img-main">
         <div class="application__wrapper">
-          <h2 class="intro-img__title">Взгляните на жизнь иначе!</h2>
-          <img class="intro-img__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Мобильное приложение">
+          <h2 class="application__title">Взгляните на жизнь иначе!</h2>
+          <picture class="application__img">
+            <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Мобильное приложение">
+          </picture>
           <h1 class="visually-hidden">Скачайте приложение Pink</h1>
           <a href="#nowhere" class="application__download">Скачать приложение</a>
           <ul class="application__platforms platforms">
             <li class="application__platform-logo">
-              <a href="#nowhere" class="application__platform-logo-ios" aria-label="Скачать приложение для IOS"></a>
+              <a href="#nowhere" class="application__platform-logo-ios" aria-label="Скачать приложение для IOS">
+                <img src="img/logo-apple.svg" width="47" height="56" alt="Скачать приложение для IOS">
+              </a>
             </li>
             <li class="application__platform-logo">
-              <a href="#nowhere" class="application__platform-logo-android" aria-label="Скачать приложение для Android"></a>
+              <a href="#nowhere" class="application__platform-logo-android" aria-label="Скачать приложение для Android">
+                <img src="img/logo-android.svg" width="43" height="47" alt="Скачать приложение для Android">
+              </a>
             </li>
             <li class="application__platform-logo">
-              <a href="#nowhere" class="application__platform-logo-windows" aria-label="Скачать приложение для Windows"></a>
+              <a href="#nowhere" class="application__platform-logo-windows" aria-label="Скачать приложение для Windows">
+                <img src="img/logo-microsoft.svg" width="44" height="41" alt="Скачать приложение для Windows">
+              </a>
             </li>
           </ul>
           <p class="application__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -59,17 +73,17 @@
           <img class="advantages-img-tablet" src="img/iphone-screen-3-tablet@1x.png" width="268" height="547" alt="Всем привет!">
           <ul class="advantages__list">
             <li class="advantages__item">
-              <img class="advantages__item-img" src="../img/iphone-screen-1-desktop@1x.png" alt="Поднимает настроение" width="292" height="302">
+              <img class="advantages__item-img" src="img/iphone-screen-1-desktop@1x.png" alt="Поднимает настроение" width="292" height="302">
               <b class="advantages__item-title">Поднимает настроение</b>
               <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__item-img" src="../img/iphone-screen-2-desktop@1x.png" alt="Поднимает настроение" width="292" height="302">
+              <img class="advantages__item-img" src="img/iphone-screen-2-desktop@1x.png" alt="Поднимает настроение" width="292" height="302">
               <b class="advantages__item-title">Меняет мир вокруг</b>
               <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__item-img" src="../img/iphone-screen-3-desktop@1x.png" alt="Поднимает настроение" width="292" height="302">
+              <img class="advantages__item-img" src="img/iphone-screen-3-desktop@1x.png" alt="Поднимает настроение" width="292" height="302">
               <b class="advantages__item-title">Заводит новых друзей</b>
               <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
@@ -130,79 +144,53 @@
               <tr>
                 <th></th>
                 <th>
-                  <b class="price__item-title">Стандарт</b>
-                  3,99 USD
+                  <b class="price__item-title">База</b>
+                  1,99 USD
                 </th>
-                <th></th>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="price__item-param price__item-param-yes">Розовый фильтр</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="price__item-param price__item-param-yes">Смайлики</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="price__item-param price__item-param-no">Комментарии</td>
-                <td></td>
-              </tr>
-            </table>
-          </div>
-          <div class="price__list">
-            <table class="price__item-table">
-              <tr>
-                <th></th>
                 <th>
                   <b class="price__item-title">Стандарт</b>
                   3,99 USD
                 </th>
-                <th></th>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="price__item-param price__item-param-yes">Розовый фильтр</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="price__item-param price__item-param-yes">Смайлики</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="price__item-param price__item-param-no">Комментарии</td>
-                <td></td>
-              </tr>
-            </table>
-          </div>
-          <div class="price__list">
-            <table class="price__item-table">
-              <tr>
-                <th></th>
                 <th>
-                  <b class="price__item-title">Стандарт</b>
-                  3,99 USD
+                  <b class="price__item-title">Анлим</b>
+                  9,99 USD
                 </th>
-                <th></th>
               </tr>
               <tr>
-                <td></td>
-                <td class="price__item-param price__item-param-yes">Розовый фильтр</td>
-                <td></td>
+                <td class="price__item-param">Розовый фильтр</td>
+                <td>
+                  <div class="price__item-param-yes"></div>
+                </td>
+                <td>
+                  <div class="price__item-param-no"></div>
+                </td>
+                <td>
+                  <div class="price__item-param-no"></div>
+                </td>
               </tr>
               <tr>
-                <td></td>
                 <td class="price__item-param price__item-param-yes">Смайлики</td>
-                <td></td>
+                <td>
+                  <div class="price__item-param-yes"></div>
+                </td>
+                <td>
+                  <div class="price__item-param-yes"></div>
+                </td>
+                <td>
+                  <div class="price__item-param-no"></div>
+                </td>
               </tr>
               <tr>
-                <td></td>
                 <td class="price__item-param price__item-param-no">Комментарии</td>
-                <td></td>
+                <td>
+                  <div class="price__item-param-yes"></div>
+                </td>
+                <td>
+                  <div class="price__item-param-yes"></div>
+                </td>
+                <td>
+                  <div class="price__item-param-yes"></div>
+                </td>
               </tr>
             </table>
           </div>

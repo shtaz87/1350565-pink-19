@@ -1,4 +1,4 @@
-@import "../../node_modules/normalize.css/normalize";
+/*@import "../node_modules/normalize.css/normalize";*/
 @import "global/variables";
 @import "global/mixin";
 @import "global/scaffolding";
@@ -16,5 +16,4 @@
 @import "block/footer/contacts";
 @import "block/footer/map";
 @import "block/footer/social";
-@import "block/footer/create";
 @import "block/footer/create";

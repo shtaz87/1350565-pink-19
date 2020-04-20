@@ -1,32 +1,32 @@
 .contest {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .contest__text {
-  margin: 55px 0;
-  padding: 0 20px;
   font-size: 14px;
   color: $dark;
   text-align: center;
   line-height: 30px;
   font-weight: 300;
+  margin: 55px 0;
+  padding: 0 20px;
 }
 
 .form {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .contest__form-row {
-  margin: 0;
-  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .contest__form-field {
@@ -34,47 +34,47 @@
   flex-wrap: wrap;
 
   & label {
-    margin: 0 0 0 23px;
     line-height: 30px;
     color: $pink;
     text-transform: uppercase;
+    margin: 0 0 0 23px;
   }
 
   & input {
     width: 100%;
-    margin: 0 0 26px 0;
     border: 2px solid #e5e5e5;
-    padding: 23px 0 23px 20px;
     color: $dark;
     font-size: 18px;
+    margin: 0 0 26px 0;
+    padding: 23px 0 23px 20px;
   }
 
   & textarea {
     width: 100%;
-    margin: 0 0 26px 0;
     border: 2px solid #e5e5e5;
-    padding: 23px 0 23px 20px;
     color: $dark;
     font-size: 18px;
     min-height: 197px;
+    margin: 0 0 26px 0;
+    padding: 23px 0 23px 20px;
   }
 }
 
 .contest__form-achievements {
+  background-color: #f2f2f2;
   margin: 0 0 40px 0;
   padding: 42px 20px 0 20px;
-  background-color: #f2f2f2;
 }
 
 .contest__form-achievements-text {
-  margin: 0;
-  padding: 0 30px;
   text-align: center;
   color: $pink;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   font-width: 400;
+  margin: 0;
+  padding: 0 30px;
 }
 
 .contest__form-area {
@@ -82,11 +82,11 @@
   padding: 0;
 
   & label {
-    margin: 0;
-    padding: 0 0 0 69px;
     font-size: 18px;
     color: $dark;
     line-height: 30px;
+    margin: 0;
+    padding: 0 0 0 69px;
   }
 
   & input {
@@ -95,21 +95,21 @@
 }
 
 .green-btn {
-  margin: 0;
-  padding: 25px 0;
   width: 100%;
   border: none;
   background-color: #2aab6d;
   color: #ffffff;
-  font-width: 700;
+  font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding: 25px 0;
 }
 
 .contest__required {
-  margin: 46px auto;
-  padding: 0;
   text-align: center;
   color: $dark;
+  margin: 46px auto;
+  padding: 0;
 }
 
 .contest__error {

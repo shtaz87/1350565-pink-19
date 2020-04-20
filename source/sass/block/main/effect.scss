@@ -1,7 +1,7 @@
 .effect {
-  margin: 59px 0 0 0;
   padding: 0;
   display: none;
+  margin: 59px 0 0 0;
 }
 
 @media (min-width: 660px) {
@@ -25,51 +25,51 @@
 }
 
 .effect__timer {
-  margin: 0;
-  padding: 0 20px;
   display: flex;
   width: 238px;
   height: 276px;
   background: url("../img/icon-timer.svg") center top no-repeat;
   background-size: 238px;
+  margin: 0;
+  padding: 0 20px;
 }
 
 @media (min-width: 1200px) {
   .effect__timer {
-    margin: 0 0 0 130px;
-    padding: 0 0 67px 0;
     width: 298px;
     height: 345px;
     background-size: 298px;
+    margin: 0 0 0 130px;
+    padding: 0 0 67px 0;
   }
 }
 
 .effect__timer-circle {
-  margin: 55px 18px 19px 18px;
   display: flex;
   width: 202px;
-  height: 175px;
+  height: 202px;
   color: $pink;
   border: 14px solid $pink;
   border-radius: 50%;
   justify-content: center;
+  margin: 55px 0 19px 0;
 }
 
 @media (min-width: 1200px) {
   .effect__timer-circle {
-    margin: 70px 22px 23px 23px;
     width: 252px;
-    height: 225px;
+    height: 255px;
+    margin: 70px 22px 0 23px;
   }
 }
 
 .effect__timer-circle-text {
-  margin: 0;
-  padding: 0;
   display: block;
   font-size: 96px;
   font-weight: 700;
   line-height: 156px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 1200px) {
@@ -80,30 +80,30 @@
 }
 
 .effect__text {
-  margin: 0;
-  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   max-width: 320px;
+  margin: 0;
+  padding: 0 20px;
 }
 
 @media (min-width: 1200px) {
   .effect__text {
-    padding: 0 130px 0 0;
     max-width: 530px;
     align-items: center;
     align-content: center;
+    padding: 0 130px 0 0;
   }
 }
 
 .effect__text-title {
-  margin: 0;
-  padding: 0;
   display: block;
   font-size: 30px;
   max-width: 170px;
   line-height: 36px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 1200px) {
@@ -115,26 +115,26 @@
 }
 
 .effect__text-text {
-  margin: 0;
-  padding: 0;
   color: $dark;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 1200px) {
   .effect__text-text {
-    margin: 30px 0 0 0;
     font-size: 18px;
     line-height: 30px;
+    margin: 30px 0 0 0;
   }
 }
 
 .effect__text-more {
-  margin: 0;
-  padding: 0;
   color: $pink;
   text-decoration: underline;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
 }

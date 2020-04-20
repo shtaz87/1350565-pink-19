@@ -1,34 +1,112 @@
+.intro-img {
+  margin: 0;
+  padding: 0;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
+  height: 237px;
+}
+
+@media (min-width: 660px) {
+  .intro-img {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center top;
+    height: 440px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro-img {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center top;
+    height: 440px;
+    padding: 0 20px;
+  }
+}
+
+.intro-img__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 100px 20px 0 20px;
+  margin: 0;
+}
+
+@media (min-width: 660px) {
+  .intro-img__title {
+    font-size: $title-tablet;
+    padding: 140px 100px 0 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro-img__title {
+    font-size: $title-desk;
+    padding: 100px 100px 0 100px;
+  }
+}
+
 .user-photo__text {
-  margin: 56px 0;
-  padding: 0 20px;
   font-size: 14px;
   color: $dark;
   line-height: 30px;
   text-align: center;
   font-weight: 400;
+  margin: 56px 0;
+  padding: 0 20px;
+}
+
+@media (min-width: 660px) {
+  .user-photo__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro-img__title {
+    font-size: 18px;
+  }
 }
 
 .user-photo__list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 660px) {
+  .user-photo__list {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .user-photo__list {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 130px;
+  }
+}
+
+.user-photo__best {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
+  padding: 0;
+
+  .user-photo__best-signature {
+    margin: 0 20px 20px 20px;
+  }
 }
 
 .user-photo__item {
-  margin: 0 20px 20px 20px;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-
-  &:first-child {
-    margin: 0 0 20px 0;
-  }
-
-  .user-photo__item-signature-best {
-    margin: 0 20px;
-  }
+  margin: 0 20px 20px 20px;
+  padding: 0;
 }
 
 @media (min-width: 660px) {
@@ -37,14 +115,45 @@
     max-width: 300px;
     margin: 0;
 
-    &:first-child {
-      width: 100%;
-      max-width: 660px;
+    &:nth-child(2n) {
+      margin-left: 20px;
     }
   }
 }
 
-.user-photo__item-img-best {
+@media (min-width: 1200px) {
+  .user-photo__item {
+    width: 100%;
+    max-width: 300px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 660px) {
+  .user-photo__best-img img {
+    width: 100%;
+    max-width: 660px;
+  }
+
+  .user-photo__item-img img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .user-photo__best-img img {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .user-photo__item-img img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.user-photo__best-sign {
   position: absolute;
   color: #ffffff;
   background-color: $pink;
@@ -55,40 +164,52 @@
   transform: translate(100%, -0);
 }
 
-.user-photo__item-signature {
+.user-photo__item-signature,
+.user-photo__best-signature {
   background-color: #f2f2f2;
-  margin: 0;
-  padding: 25px 18px;
   width: 100%;
   color: $dark;
+  margin: 0 0 20px 0;
+  padding: 25px 18px;
 }
 
-.user-photo__item-signature-name {
+@media (min-width: 660px) {
+  .user-photo__item-signature,
+  .user-photo__best-signature {
+    min-height: 48px;
+  }
+}
+
+.user-photo__item-signature-name,
+.user-photo__best-signature-name {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
 }
 
-.user-photo__item-signature-time {
+.user-photo__item-signature-time,
+.user-photo__best-signature-time {
   font-size: 12px;
   line-height: 24px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.user-photo__item-signature-text {
-  margin: 0;
-  padding: 0;
+.user-photo__item-signature-text,
+.user-photo__best-signature-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
-.user-photo__item-signature-like {
-  margin: 18px 0 0 0;
-  padding: 0;
+.user-photo__item-signature-like,
+.user-photo__best-signature-like {
   font-size: 12px;
   color: $pink;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 18px 0 0 0;
+  padding: 0;
 }

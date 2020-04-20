@@ -21,6 +21,18 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 660px) {
+  body {
+    max-width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -32,4 +44,8 @@ img {
 
 .visually-hidden {
   @include visuallyHidden;
+}
+
+.grey {
+  background-color: #f2f2f2;
 }

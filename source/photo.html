@@ -8,7 +8,11 @@
   <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo logo">
-        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -38,23 +42,27 @@
         <h2 class="visually-hidden">Блок с фотографиями</h2>
         <p class="user-photo__text">Взгляните на фотографии, которые выкладывают пользователи!<br>
           Видите, как не хватает ваших?</p>
+        <div class="user-photo__best">
+          <span class="user-photo__best-sign">Панорама дня</span>
+          <picture class="user-photo__best-img">
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама дня">
+          </picture>
+          <div class="user-photo__best-signature">
+            <b class="user-photo__best-signature-name">Анна</b>
+            <span class="user-photo__best-signature-time">(5 минут назад)</span>
+            <p class="user-photo__best-signature-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="user-photo__best-signature-like">Нравится: 215</p>
+          </div>
+        </div>
         <ul class="user-photo__list">
           <li class="user-photo__item">
-            <div class="user-photo__item-img">
-              <span class="user-photo__item-img-best">Панорама дня</span>
-              <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-            </div>
-            <div class="user-photo__item-signature user-photo__item-signature-best">
-              <b class="user-photo__item-signature-name">Анна</b>
-              <span class="user-photo__item-signature-time">(5 минут назад)</span>
-              <p class="user-photo__item-signature-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <p class="user-photo__item-signature-like">Нравится: 215</p>
-            </div>
-          </li>
-          <li class="user-photo__item">
-            <div class="user-photo__item-img">
-              <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Вчера он на луну летал">
-            </div>
+            <picture class="user-photo__item-img">
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobilee@2x.jpg 2x" width="280" height="180" alt="Вчера он на луну летал">
+            </picture>
             <div class="user-photo__item-signature">
               <b class="user-photo__item-signature-name">Левон</b>
               <span class="user-photo__item-signature-time">(5 часов назад)</span>
@@ -63,9 +71,11 @@
             </div>
           </li>
           <li class="user-photo__item">
-            <div class="user-photo__item-img">
-              <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Соседи будут рады!">
-            </div>
+            <picture class="user-photo__item-img">
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobilee@2x.jpg 2x" width="280" height="180" alt="Соседи будут рады!">
+            </picture>
             <div class="user-photo__item-signature">
               <b class="user-photo__item-signature-name">Антон</b>
               <span class="user-photo__item-signature-time">(12 часов назад)</span>
@@ -74,9 +84,11 @@
             </div>
           </li>
           <li class="user-photo__item">
-            <div class="user-photo__item-img">
-              <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Здесь могла быть ваша цитата о высоком и вечном.">
-            </div>
+            <picture class="user-photo__item-img">
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobilee@2x.jpg 2x" width="280" height="180" alt="Здесь могла быть ваша цитата о высоком и вечном.">
+            </picture>
             <div class="user-photo__item-signature">
               <b class="user-photo__item-signature-name">Борис</b>
               <span class="user-photo__item-signature-time">(20 часов назад)</span>
@@ -85,9 +97,11 @@
             </div>
           </li>
           <li class="user-photo__item">
-            <div class="user-photo__item-img">
-              <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Самая кубанская в мире!">
-            </div>
+            <picture class="user-photo__item-img">
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobilee@2x.jpg 2x" width="280" height="180" alt="Самая кубанская в мире!">
+            </picture>
             <div class="user-photo__item-signature">
               <b class="user-photo__item-signature-name">Сергей</b>
               <span class="user-photo__item-signature-time">(25 часов назад)</span>
@@ -96,9 +110,11 @@
             </div>
           </li>
           <li class="user-photo__item">
-            <div class="user-photo__item-img">
-              <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Где снег-то?">
-            </div>
+            <picture class="user-photo__item-img">
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobilee@2x.jpg 2x" width="280" height="180" alt="Где снег-то?">
+            </picture>
             <div class="user-photo__item-signature">
               <b class="user-photo__item-signature-name">Максим</b>
               <span class="user-photo__item-signature-time">(40 часов назад)</span>
@@ -107,9 +123,11 @@
             </div>
           </li>
           <li class="user-photo__item">
-            <div class="user-photo__item-img">
-              <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Всем GM и взаимные лайки!">
-            </div>
+            <picture class="user-photo__item-img">
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobilee@2x.jpg 2x" width="280" height="180" alt="Всем GM и взаимные лайки!">
+            </picture>
             <div class="user-photo__item-signature">
               <b class="user-photo__item-signature-name">Надежда</b>
               <span class="user-photo__item-signature-time">(45 часов назад)</span>

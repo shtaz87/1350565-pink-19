@@ -1,13 +1,20 @@
 .price {
-  margin: 0;
-  padding: 0;
   text-align: center;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.price__list:nth-child(2),
-.price__list:nth-child(3) {
-  display: none;
+@media (min-width: 660px) {
+  .price {
+    padding: 0 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price {
+    padding: 0 130px;
+  }
 }
 
 .price__item-table {
@@ -17,27 +24,24 @@
 }
 
 .price__item-table th {
-  margin: 0;
-  padding: 15px 0;
   background-color: #283645;
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
-}
-
-.price__item-table th:first-child,
-.price__item-table th:last-child {
-  width: 20px;
-}
-
-.price__item-table th:last-child {
-  width: 20px;
-}
-
-.price__item-table th:nth-child(2) {
-  border-left: 2px solid #e5e5e5;
+  margin: 0;
+  padding: 15px 0;
+  width: 25%;
   border-right: 2px solid #e5e5e5;
+
+  &:first-child {
+    border-right: none;
+    background: none;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
 }
 
 .price__item-title {
@@ -48,13 +52,14 @@
 }
 
 .price__item-table td {
-  margin: 0;
-  padding: 15px 0 15px 22px;
   color: $dark;
+  background-color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  border-bottom: 2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
+  margin: 0;
+  padding: 15px 0 15px 22px;
 }
